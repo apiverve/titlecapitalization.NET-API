@@ -1,4 +1,4 @@
-Title Capitalization API
+Title Case Converter API
 ============
 
 Title Capitalization is a simple tool for converting title text to various cases. It returns the text converted to your desired case.
@@ -7,7 +7,7 @@ Title Capitalization is a simple tool for converting title text to various cases
 ![Code Climate](https://img.shields.io/badge/maintainability-B-purple)
 ![Prod Ready](https://img.shields.io/badge/production-ready-blue)
 
-This is a .NET Wrapper for the [Title Capitalization API](https://apiverve.com/marketplace/api/titlecapitalization)
+This is a .NET Wrapper for the [Title Case Converter API](https://apiverve.com/marketplace/api/titlecapitalization)
 
 ---
 
@@ -15,17 +15,17 @@ This is a .NET Wrapper for the [Title Capitalization API](https://apiverve.com/m
 
 Using the .NET CLI:
 ```
-dotnet add package APIVerve.API.TitleCapitalization
+dotnet add package APIVerve.API.TitleCaseConverter
 ```
 
 Using the Package Manager:
 ```
-nuget install APIVerve.API.TitleCapitalization
+nuget install APIVerve.API.TitleCaseConverter
 ```
 
 Using the Package Manager Console:
 ```
-Install-Package APIVerve.API.TitleCapitalization
+Install-Package APIVerve.API.TitleCaseConverter
 ```
 
 From within Visual Studio:
@@ -33,8 +33,8 @@ From within Visual Studio:
 1. Open the Solution Explorer.
 2. Right-click on a project within your solution.
 3. Click on Manage NuGet Packages...
-4. Click on the Browse tab and search for "APIVerve.API.TitleCapitalization".
-5. Click on the APIVerve.API.TitleCapitalization package, select the appropriate version in the right-tab and click Install.
+4. Click on the Browse tab and search for "APIVerve.API.TitleCaseConverter".
+5. Click on the APIVerve.API.TitleCaseConverter package, select the appropriate version in the right-tab and click Install.
 
 
 ---
@@ -48,17 +48,17 @@ You can get it by signing up at [https://apiverve.com](https://apiverve.com)
 
 ## Usage
 
-The Title Capitalization API documentation is found here: [https://docs.apiverve.com/api/titlecapitalization](https://docs.apiverve.com/api/titlecapitalization).  
+The Title Case Converter API documentation is found here: [https://docs.apiverve.com/api/titlecapitalization](https://docs.apiverve.com/api/titlecapitalization).  
 You can find parameters, example responses, and status codes documented here.
 
 ### Setup
 
 ###### Authentication
-Title Capitalization API uses API Key-based authentication. When you create an instance of the API client, you can pass your API Key as a parameter.
+Title Case Converter API uses API Key-based authentication. When you create an instance of the API client, you can pass your API Key as a parameter.
 
 ```
 // Create an instance of the API client
-var apiClient = new TitleCapitalizationAPIClient("[YOUR_API_KEY]", true);
+var apiClient = new TitleCaseConverterAPIClient("[YOUR_API_KEY]", true);
 ```
 
 ---
@@ -70,7 +70,7 @@ Using the API client, you can perform requests to the API.
 ###### Define Query
 
 ```
-var queryOptions = new TitleCapitalizationQueryOptions {
+var queryOptions = new TitleCaseConverterQueryOptions {
   text = "comprehensive analysis of quarterly financial performance and strategic initiatives for sustainable growth",
   style = "title-case"
 };
